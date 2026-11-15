@@ -1,0 +1,25 @@
+{
+  "data_version": "mock-2026.11.14",
+  "generated": "2026-11-14",
+  "synthetic": true,
+  "targets": [
+    {
+      "id": "moon_south_pole",
+      "body": "moon",
+      "file": "moon_south_pole.json",
+      "center": [
+        -40,
+        30
+      ]
+    },
+    {
+      "id": "mars_jezero",
+      "body": "mars",
+      "file": "mars_jezero.json",
+      "center": [
+        -30,
+        25
+      ]
+    }
+  ]
+}
