@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uz" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>AnalogScout</title>
+    <meta
+      name="description"
+      content="AnalogScout finds Earth's best analog sites for the Moon and Mars, scored on mobility, thermal, dryness and geology. Works offline."
+    />
+    <meta name="theme-color" content="#04060c" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="/analogscout/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/analogscout/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AnalogScout" />
+    <meta property="og:title" content="AnalogScout — Earth analogs for the Moon and Mars" />
+    <meta property="og:description" content="Measurable analog-site selection: 4 profiles, live weights, validated against known analogs." />
+    <style>
+      /* Boot splash: painted before any JS, replaced when React mounts. */
+      html, body { margin: 0; background: #04060c; color: #eef2fb; }
+      .boot { position: fixed; inset: 0; display: grid; place-items: center; font: 500 15px/1.4 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+      .boot__inner { display: grid; justify-items: center; gap: 18px; }
+      .boot__orb { width: 56px; height: 56px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #9fd0ff, #3987e5 55%, #0d2a55 100%); box-shadow: 0 0 60px rgba(90, 169, 255, 0.35); animation: boot 1.6s ease-in-out infinite; }
+      .boot__name { letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: #8d97ad; }
+      @keyframes boot { 50% { transform: scale(0.92); box-shadow: 0 0 30px rgba(90, 169, 255, 0.2); } }
+      @media (prefers-reduced-motion: reduce) { .boot__orb { animation: none; } }
+    </style>
+    <script type="module" crossorigin src="/analogscout/assets/index-CGrFylGg.js"></script>
+    <link rel="modulepreload" crossorigin href="/analogscout/assets/react-Cd9I7VZW.js">
+    <link rel="modulepreload" crossorigin href="/analogscout/assets/maplibre-BXTPpkEx.js">
+    <link rel="modulepreload" crossorigin href="/analogscout/assets/charts-oRlkm2VR.js">
+    <link rel="stylesheet" crossorigin href="/analogscout/assets/index-PiI4N345.css">
+  <link rel="manifest" href="/analogscout/manifest.webmanifest"></head>
+  <body>
+    <div id="root">
+      <div class="boot" role="status" aria-live="polite">
+        <div class="boot__inner"><div class="boot__orb"></div><div class="boot__name">AnalogScout</div></div>
+      </div>
+    </div>
+    <noscript>AnalogScout needs JavaScript to run the interactive map.</noscript>
+  </body>
+</html>
